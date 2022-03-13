@@ -3,16 +3,20 @@
  * main - entry block
  * @void: no argument
  * Return: 0
- */
+ **/
 int main(void)
 {
 		int i;
-		char c;
 
 		for (i = 0; i < 10; i++)
+		{
 			putchar(i % 10 + '0');
-		for (c = 'a'; c < 'g'; c++)
-			putchar(c);
+			if (i < 9)
+			{
+																				putchar(',');
+																				putchar(' ');
+																			}
+		}
 		putchar('\n');
 		return (0);
 }
