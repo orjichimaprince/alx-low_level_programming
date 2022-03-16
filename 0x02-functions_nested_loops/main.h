@@ -1,6 +1,6 @@
-#ifndef MAIN_H
+#ifndef MAIiN_H
 #define MAIN_H
 
-void_putchar(char put);
+void _putchar(char put);
 void print_alphabet(void);
 #endif
