@@ -1,19 +1,19 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * print_most_numbers - a function that prints the numbers, from 0-9.
- * Do not print 2 and 4
- * followed by a newline
- * Return: Always 0
+ * print_most_numbers - prints the numbers interleaved
+ *
+ * Return: numbers
  */
 void print_most_numbers(void)
 {
-	int i = '0';
+	int numb;
 
-	for (; i <= '9'; i++)
+	for (numb = 48 ; numb <= 57 ; numb++)
 	{
-		if (i != '2' && i != '4')
-			_putchar(i);
+		if (numb != 50 && numb != 52)
+		{
+			_putchar(numb);
+		}
 	}
 	_putchar('\n');
 }
