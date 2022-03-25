@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * reverse_array - fuction reverse the content of an array
- * @a: an array of integers
- * @n: size of elements of array.
- *
- * Return: nothing.
+ * print_number - Prints an integer.
+ * @n: number to be printed
  */
-void reverse_array(int *a, int n)
+void print_number(int n)
 {
-	int i;
+	unsigned int x = n;
 
-	for (i = 0; i < n / 2; i++)
+	if (n < 0)
 	{
-		int temp = a[i];
+		_putchar('-');
+		x = -x;
 
-		a[i] = a[n - 1 - i];
-		a[n - 1 - i] = temp;
 	}
+	if ((x / 10) > 0)
+		print_number(x / 10);
+	_putchar((x % 10) + '0');
 }
