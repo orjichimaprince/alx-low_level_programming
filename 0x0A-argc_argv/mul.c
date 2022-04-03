@@ -8,10 +8,11 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc === 3)/*the command arguments must be 3*/
+	if (argc != 3)/*the command arguments must be 3*/
 	{
 		printf("Error\n");
 		return (1);
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));/*atoi changes string to int*/
-		return (0);
 	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));/*atoi changes string to int*/
+	return (0);
+}
