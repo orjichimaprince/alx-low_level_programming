@@ -8,9 +8,9 @@
 char *_strdup(char *str)
 {
 	unsigned int i = 0, j;
-	
+
 	char *ptr;
-	
+
 	if (str == NULL)
 		return (NULL);
 	/*need to know the size of string*/
@@ -29,6 +29,6 @@ char *_strdup(char *str)
 		*(ptr + j) = *(str + j);
 	}
 	*(ptr + j) = '\0';
-	
+
 	return (ptr);
 }
