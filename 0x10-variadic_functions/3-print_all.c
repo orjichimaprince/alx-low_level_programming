@@ -3,6 +3,7 @@
  * use_c - function to get c argument
  * @arg: va_list
  */
+
 void use_c(va_list arg, char *sep)
 {
 	printf("%s%c", sep, va_arg(arg, int));
@@ -11,6 +12,7 @@ void use_c(va_list arg, char *sep)
  * use_i - function to get i argument
  * @arg: va_list
  */
+
 void use_i(va_list arg, char *sep)
 {
 	printf("%s%d", sep, va_arg(arg, int));
