@@ -21,7 +21,7 @@ void use_i(va_list arg, char *sep)
  */
 void use_f(va_list arg, char *sep)
 {
-	printf("%s%f", sep, va_arg(arg, double))
+	printf("%s%f", sep, va_arg(arg, double));
 }
 /**
  * use_s - function to get s argument
